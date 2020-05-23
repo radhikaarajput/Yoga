@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/R1" android:background="#91a3b0" android:layout_width="match_parent" android:layout_height="match_parent"> &gt;\10
+    <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imageView" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/anantasana" android:scaleType="centerCrop"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/line1" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="20dp">
+                <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#044f67" android:gravity="center" android:layout_gravity="center" android:id="@+id/textview1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="hello"/>
+                <TextView android:textSize="14sp" android:textColor="#4d8fac" android:gravity="left" android:id="@+id/textview2" android:background="#e5d283" android:paddingLeft="2dp" android:paddingTop="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="10dp" android:layout_marginRight="4dp" android:text="hello"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="#ffffff" android:layout_gravity="bottom" android:id="@+id/button1" android:background="@color/colorPrimaryDark" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Play Video" android:layout_weight="1"/>
+        <Button android:textColor="#ffffff" android:layout_gravity="bottom" android:id="@+id/button2" android:background="@color/colorPrimaryDark" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Play audio" android:layout_weight="1" android:onClick="speak_my_text"/>
+    </LinearLayout>
+</RelativeLayout>
