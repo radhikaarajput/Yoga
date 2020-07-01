@@ -1,5 +1,5 @@
 # Yoga
-android application on yoga
+Android application 
 
 
 
